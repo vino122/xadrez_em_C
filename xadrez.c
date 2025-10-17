@@ -1,16 +1,19 @@
 #include <stdio.h>
 int main() {
 
-    int movimento_cavalo;
+    
+    int cavalo = 1;
 
-    printf("Digite o movimento do cavalo do xadrez:(entre 1 e 5)\n"); // Solicita ao usuário o número de movimentos do cavalo
-    scanf("%d", &movimento_cavalo);
     printf("CAVALO\n");
-
-    for (int cavalo = 1; cavalo <= movimento_cavalo; cavalo++) { // Loop que imprime "Direita" de 1 a 5 vezes, dependendo do valor inserido pelo usuário
-        printf("Direita \n"); //imprime Direita de 1 a 5 vezes
+    while (cavalo--)
+    {
+        for ( int i = 0; i < 2; i++) {
+            printf("Baixo\n"); //imprime Baixo 1 vez
+        }
+        printf("Esquerda\n");
     }
-
+    
+  
     printf("\n");
 
     printf("BISPO\n");
